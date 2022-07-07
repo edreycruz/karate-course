@@ -60,6 +60,7 @@ Feature: Post API Demo
     And match $ == expectedOutput
 
   #POST request setting request values
+  @readFromFile
   Scenario: Post Demo 6
     Given path '/users'
     And def reqBody = read("create-user-post-request.json")
